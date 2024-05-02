@@ -1,19 +1,8 @@
 <script setup lang="ts">
-const maisonListe: {
-    adresse: string;
-    collectionId: string;
-    collectionName: string;
-    created: string;
-    favoris: boolean;
-    id: string;
-    image: string;
-    nbChambres: number;
-    nbSdb: number;
-    nomMaison: string;
-    prix: number;
-    surface: number;
-    updated: string;
-}[] = [
+import type { MaisonRecord } from '@/types';
+
+
+const maisonListe : MaisonRecord [] = [
   {
     "adresse": "15 rue de la bouillie",
     "collectionId": "qzzwey9w66sl8mu",
@@ -90,6 +79,7 @@ const maisonListe: {
     "updated": "2024-05-01 13:10:41.763Z"
   }
 ]
+console.log(maisonListe);
 
 </script>
 
