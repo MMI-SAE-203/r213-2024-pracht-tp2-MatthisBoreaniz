@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { MaisonRecord } from '@/types';
+import type { MaisonsRecord } from '@/pocketbase-types';
+import MaisonCard from '@/components/MaisonCard.vue';
 
-
-const maisonListe : MaisonRecord [] = [
+const maisonsListe:MaisonsRecord [] = [
   {
     "adresse": "15 rue de la bouillie",
     "collectionId": "qzzwey9w66sl8mu",
@@ -42,7 +42,7 @@ const maisonListe : MaisonRecord [] = [
     "id": "mf77zzyi7k4k7mx",
     "image": "hobbitinteieur_CNXviFYpQx.jpg",
     "nbChambres": 8,
-    "nbSdb": -12,
+    "nbSdb": 12,
     "nomMaison": "Maison Hobbit",
     "prix": 120000,
     "surface": 45,
@@ -79,10 +79,10 @@ const maisonListe : MaisonRecord [] = [
     "updated": "2024-05-01 13:10:41.763Z"
   }
 ]
-console.log(maisonListe);
+console.log(maisonsListe);
 
 </script>
 
 <template>
-  <h1 class="text-2xl">Bonjour monde !</h1>
+  <MaisonCard v-for="MaisonsRecord in maisonsListe" :key="MaisonsRecord.nomMaison" v-bind="MaisonsRecord" />
 </template>
