@@ -2,13 +2,12 @@
 import type { MaisonsRecord } from '@/pocketbase-types';
 import MaisonCard from '@/components/MaisonCard.vue';
 
-import { allMaisonsFavoris } from '@/backend'
+import { allMaisonsSorted } from '@/backend'
 
-const maisonsListe = await allMaisonsFavoris()
+const maisonsListe = await allMaisonsSorted()
 
 </script>
 
 <template>
-  <h1>bonjour tout le monde</h1>
   <MaisonCard v-for="MaisonsRecord in maisonsListe" :key="MaisonsRecord.nomMaison" v-bind="MaisonsRecord" />
 </template>
