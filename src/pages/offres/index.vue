@@ -19,7 +19,7 @@ const maisonsListe = await allMaisonsSorted()
           id: uneMaison.id
         }
       }"
-      class="text-red-400 hover:text-red-600"
+      class="text-black-400 hover:text-indigo-500 hover:text-xl  "
     >
       {{ uneMaison.nomMaison }}
     </RouterLink>
