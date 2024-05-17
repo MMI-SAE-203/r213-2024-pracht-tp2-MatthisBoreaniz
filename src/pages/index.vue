@@ -10,5 +10,5 @@ const maisonsListe = await allMaisonsFavoris()
 
 <template>
   <h1>bonjour tout le monde</h1>
-  <MaisonCard v-for="MaisonsRecord in maisonsListe" :key="MaisonsRecord.nomMaison" v-bind="MaisonsRecord" />
+  <MaisonCard v-for="MaisonsRecord in maisonsListe" :key="MaisonsRecord.id" v-bind="MaisonsRecord" />
 </template>
