@@ -16,7 +16,10 @@ onErrorCaptured((err, instance, info) => {
           <RouterLink to="/" class="text-indigo-500 bg-white-500 hover:text-white hover:bg-red-500 rounded-md "> Accueil </RouterLink>
         </li>
         <li>
-          <RouterLink to="/offres" class="text-indigo-500 bg-white-500 hover:text-white hover:bg-red-500 rounded-md "> Toutes les offres </RouterLink>
+          <RouterLink to="/offres" class="text-indigo-500 bg-white-500 hover:text-white hover:bg-red-500 rounded-md "cd> Toutes les offres </RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/agence" class="text-indigo-500 bg-white-500 hover:text-white hover:bg-red-500 rounded-md "cd> Tous les agents </RouterLink>
         </li>
       </ul>
     </nav>

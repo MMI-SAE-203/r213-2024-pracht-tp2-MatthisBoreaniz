@@ -2,6 +2,7 @@
   import type { MaisonsResponse } from '@/pocketbase-types'
   import ImgPb from './ImgPb.vue'
   const props = defineProps<MaisonsResponse<any>>()
+  
 </script>
 <template>
 <div

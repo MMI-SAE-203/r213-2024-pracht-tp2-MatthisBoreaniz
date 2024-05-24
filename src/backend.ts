@@ -39,3 +39,10 @@ export async function AgentID(id) {
     const AgentIDrecord = await pb.collection('agence').getOne(id);
         return AgentIDrecord;
         }
+
+export async function allAgenceMaisonbyId(id) {
+    const sortedRecordsAgence = await pb.collection('agence').getOne(id,{
+        expand: 'maisons(agence)',
+        });
+             return sortedRecordsAgence;
+        }
